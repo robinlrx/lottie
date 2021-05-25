@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			background-color: #ffe268;
+		}
+		.container {
+			width: 100%;
+			height: 100vh;
+		}
+		.lottie {
+			background-color: blue;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="lottie" id="lottie"></div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		var animation = bodymovin.loadAnimation({
+			container: document.getElementById('lottie'), // Required
+			path: './anim.json', // Required
+			renderer: 'canvas', // Required
+			loop: true, // Optional
+			autoplay: true, // Optional
+		})
+	</script>
+	<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+</body>
+</html>
